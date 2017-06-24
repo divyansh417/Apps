@@ -9,14 +9,31 @@ class UsersController < ApplicationController
   end
 
   def signin_submit
+    if session[:user_id]
+      return redirect_to '/users/index'
+    end
+    email=params["email"]
+    password=params["password"]
+    @user=User.where(email:email).first
+    puts @user
+    if @user
+        if @user.password==password
+          session[:user_id]=@user.id
+          return redirect_to '/users/index'
+        end
+        message="Wrong password try again"
+        return redirect_to controller:'users',action:'signin',errors:true,message:message
+
+    end
+    message="User doesnot exist"
+    return redirect_to controller:'users',action:'signin',errors:true,message:message
+
   end
   def signup_submit
-    puts "check"
     name=params["name"]
     email=params["email"]
     password=params["password"]
     confirmpassword=params["password_confirmation"]
-    puts "working"
     @user=User.create(name:name,email:email,password:password,password_confirmation:confirmpassword)
     if  @user.valid?
         @user.save

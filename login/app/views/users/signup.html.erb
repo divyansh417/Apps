@@ -26,38 +26,46 @@
                     <input class="mdl-textfield__input" type="text" name="name" id="user" >
                     <label class="mdl-textfield__label" for="user">Name</label>
                     </div>
+                    <% if params["errors"]=="true"%>
                     <% if messages["name"]%>
                     <div class="alert alert-danger">
                     <%= messages["name"].first%>
                     </div>
                     <% end%>
+                     <%end%>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <input class="mdl-textfield__input" type="email" name="email" id="email" >
                     <label class="mdl-textfield__label" for="email">email</label>
                     </div>
+                    <% if params["errors"]=="true"%>
                     <% if messages["email"]%>
                     <div class="alert alert-danger">
                     <%= messages["email"].first%>
                     </div>
                     <% end%>
+                     <%end%>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <input class="mdl-textfield__input" type="password" name="password" id="password">
                     <label class="mdl-textfield__label" for="password">Password</label>
                     </div>
+                    <% if params["errors"]=="true"%>
                     <% if messages["password"]%>
                     <div class="alert alert-danger">
                     <%= messages["password"].first%>
                     </div>
                     <% end%>
+                     <%end%>
                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <input class="mdl-textfield__input" type="password" name="password_confirmation" id="confirmpassword">
                     <label class="mdl-textfield__label" for="password">ConfirmPassword</label>
                     </div>
+                    <% if params["errors"]=="true"%>
                     <% if messages["password_confirmation"]%>
                     <div class="alert alert-danger">
                     <%= messages["password_confirmation"].first%>
                     </div>
                     <% end%>
+                    <%end%>
                     <div>
                    <input type="submit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" value="Sign Up">
                    </div>
