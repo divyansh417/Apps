@@ -1,20 +1,4 @@
 Rails.application.routes.draw do
-  get 'todo/new'
-
-  get 'todo/create'
-
-  get 'todo/show'
-
-  get 'todo/editshow'
-
-  get 'todo/edit'
-
-  get 'todo/updateshow'
-
-  get 'todo/update'
-
-  get 'todo/delete'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
