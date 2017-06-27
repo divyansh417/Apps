@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+   <div class="outer">
+     <div class="inner_one">
+       <div class="profilepic" >
+          <img  style="width: 40px; height: 40px;" src="images/profile.png">
+       </div>
+       <div class="content">
+         <p>Hey There.....Look I am playing with flex</p>
+       </div>
+     </div>
+     <br><br><br>
+     <div class="inner_two2">
+         <div class="profilepic2" >
+              <img src="images/profile.png" style="width: 40px; height: 40px;">
+         </div>
+         <div class="content2">
+         <p>Hey There.....Look I am playing with flex</p>
+         </div>
+     </div>
+     </div>
+
+</body>
+</html>
+<style type="text/css">
+ .outer{
+  width:100%;
+  height:100%;
+  background-color:#FFC400;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.inner_one{
+  width:500px;
+  height:200px;
+  background-color:#FFECB3;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start
+  align-items:flex-end;
+}
+.profilepic{
+  width:50px;
+  height:50px;
+}
+.content{
+  align-self:flex-end;
+  background-color:#FFF8E1;
+  width:400px;
+  height:130px;
+  padding:5px;
+}
+.inner_two2{
+  width:500px;
+  height:200px;
+  background-color:#FFECB3;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:flex-start;
+  
+}
+.profilepic2{
+  width:50px;
+  height:50px;
+  align-self:flex-end;
+}
+.content2{
+  background-color:#FFF8E1;
+  width:400px;
+  height:130px;
+  padding:5px;
+}>
+</style>
