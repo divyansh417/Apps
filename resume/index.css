@@ -1,0 +1,149 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+	width: auto;
+	position: static;
+	margin: auto;
+}
+header{
+	height: 50px;
+	width: auto;
+	display: flex;
+	padding:auto;
+	background-color: rgba(46, 73, 117, 1);
+}
+header nav{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+header nav a{
+	color:#fff;
+	font: normal normal normal 20px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
+	text-decoration: none;
+	padding-left:20px;
+
+}
+.top{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.pic{
+	background: url('images/pic.jpg');
+	width: 100%;
+	font: normal normal normal 20px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 2em;
+}
+.profilepic{
+	width: 200px;
+	height: 200px;
+	border-radius:50%;
+	margin-top: 200px;
+	position: absolute;
+	background:#fff;
+	padding: 5px;
+}
+#pc{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+#aboutme{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #edeff5;
+	padding-top:50px;
+	height: 600px;
+}
+#aboutme h3{
+	font: normal normal normal 20px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
+	font-size: 2em;
+	letter-spacing: 3.8px;
+}
+#aboutme_inner{
+	width: 700px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.box{
+	background-color: #df3143;
+	width: 100px;
+	height: 6px;
+}
+.lower{
+	background:url('images/pic.jpg');
+	height: 600px;
+	display: flex;
+    justify-content: center;
+}
+.lower_inner{
+	width: 700px;
+}
+.skillsbox{
+	width: 750px;
+	height: 500px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.skillsbox div{
+	width: 250px;
+	height: 250px;
+}
+.one{
+	background-color: #edeff5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.two{
+	background-color: #bbc8dd;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.one h1{
+	font-size: 2em;
+	color: #df3143;;
+}
+.two h1{
+	font-size: 2em;
+	color:  rgba(46, 73, 117, 1);
+}
+.contact{
+	display: flex;
+	height: 350px;
+	justify-content: flex-start;
+}
+.contact div{
+	width: 50%
+}
+.quickid{
+	background-color:  rgba(46, 73, 117, 1);
+}
+.messageform{
+	background-color: #bbc8dd;
+}
+footer{
+	height: 120px;
+	background-color: #edeff5;
+}
